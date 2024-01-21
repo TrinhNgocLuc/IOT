@@ -1,0 +1,8 @@
+.sensor {
+    margin-bottom: 20px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 45px;
+    width: 300px;
+    text-align: center;
+}

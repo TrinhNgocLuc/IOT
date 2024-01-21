@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url("anh.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.sensor {
+    margin-bottom: 20px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 45px;
+    width: 300px;
+    text-align: center;
+    border-radius: 7%;
+}
+/* Thêm kiểu cho sensor temperature */
+#temperature {
+   background-color: #99FF99 ;
+}
+
+/* Thêm kiểu màu nền nhạt khi dưới 25 và đậm khi trên 25 */
+#temperature[data-above-25="false"] {
+    background-color: #33CCFF; /* Màu nhạt (Light Green) mặc định */
+    color: #000; /* Màu chữ đen mặc định */
+}
+
+/* Thay đổi màu nền thành đậm khi nhiệt độ trên 25 */
+#temperature[data-above-25="true"] {
+    background-color: #ff6666; /* Màu đậm (Light Coral) */
+    color: #000; /* Màu chữ trắng */
+}
+#humidity {
+    background-color: #449dec ;
+ }
+ 
+ /* Thêm kiểu màu nền nhạt khi dưới 25 và đậm khi trên 25 */
+#humidity[data-above-50="false"] {
+     background-color: #93c8d9; /* Màu nhạt (Light Green) mặc định */
+     color: #000; /* Màu chữ đen mặc định */
+ }
+ 
+ /* Thay đổi màu nền thành đậm khi nhiệt độ trên 25 */
+#humidity[data-above-50="true"] {
+     background-color: #087fc0; /* Màu đậm (Light Coral) */
+     color: #000; /* Màu chữ trắng */
+ }
+#light {
+    background-color: #FFFF99 ;
+ }
+ 
+ /* Thêm kiểu màu nền nhạt khi dưới 25 và đậm khi trên 25 */
+#light[data-above-200="false"] {
+     background-color: #666869; /* Màu nhạt (Light Green) mặc định */
+     color: #000; /* Màu chữ đen mặc định */
+ }
+ 
+ /* Thay đổi màu nền thành đậm khi nhiệt độ trên 25 */
+#light[data-above-200="true"] {
+     background-color: #dbf534; /* Màu đậm (Light Coral) */
+     color: #000; /* Màu chữ trắng */
+ }
+.value {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.mid{
+    display: flex;
+}
+.switch {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 120px;
+    width: 300px;
+    text-align: center;
+    border-radius: 7%;
+    background-color: #c3d2d6;
+}
+.switch-item{
+    width: 40%;
+}
+.switch h2 {
+    flex-grow: 1;
+    padding-top: 20px;
+}
+
+.sensor h2 i {
+    margin-left: 10px;
+}
+#onButton{
+    margin: 20px 0;
+}
+#onfanButton{
+    margin: 20px 0;
+}
+#lightBulbIcon {
+    margin-left: 140px;
+    width: 15px;
+    transition: background-color 0.01s ease-in-out; /* Hiệu ứng chuyển đổi màu nền */
+}
+#lightBulbIcon.light-on{
+    width: 25px;
+    background-color: #FFFF00;
+    margin-left: 140px;
+    border-radius: 90%;
+}
+#fanBulbIcon{
+    font-size: 25px;
+    margin-left: 135px;
+    width: 15px;
+    transition: background-color 0.01s ease-in-out; /* Hiệu ứng chuyển đổi màu nền */
+}
+#fanBulbIcon.rotation-icon-on{
+    margin-left: 143px;
+    animation: rotateFan 0.05s linear infinite;
+    transform-origin: center center;
+}
+@keyframes rotateFan {
+    from {
+        transform: rotate(0deg); /* Quay từ góc 0 độ */
+    }
+    to {
+        transform: rotate(360deg); /* Quay đến góc 360 độ */
+    }
+}
+.chart-container{
+    width: 60%;
+}
