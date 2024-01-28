@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/FE/fontawesome-free-6.5.1-web/css/all.min.css">
+    <title>Profile</title>
+    <style>body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+        
+        
+        /*phan dau*/
+        .anh{
+            height: 250px;
+        
+        }
+        img{
+            width:100%;
+            height: 100%;
+        }
+        
+        
+        
+        /*phan giua*/
+        .grid_row{
+            display: flex;
+            height: 700px;
+        }
+        
+        .grid_10{
+            margin-left: 50px;
+            padding-left: 12px;
+            padding-right: 12px;
+            width: 100%;
+        }
+        
+        
+        .nguoi-dung{
+            margin-left: 300px;
+            padding: 10px 0;
+            display: flex;
+           
+        }
+        
+        .avata{
+        
+            width: 400px;
+            height: 400px;
+            margin-top: 100px;
+        
+        }
+        
+        .noi-dung-chinh{
+        
+            margin-left: 100px;
+            margin-top: 100px;
+            border-left: 1px solid black;
+        }
+        
+        .thong-tin-list{
+            list-style: none;
+            font-size: 35px;
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+        
+        .thong-tin-list li{
+            padding: 20px 0;
+            color: rgb(99, 104, 99);
+        }
+        
+        .thong-tin-list li span{
+            margin-left: 20px;
+            color: black
+        }
+        h2{
+            text-align: center;
+            font-size: 30px;
+            margin-top: 20px;
+        }
+        .menu{
+            position: relative;
+            float: left;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        h5{
+            font-size: 20px;
+        }
+        .menu:hover .list{
+            display: block;
+        }
+        .list{
+            display: none;
+            width: 150px;
+            position: absolute;
+            background-color: #f2f2f2;
+        }
+        .item{
+            padding-top: 12px;
+            padding-bottom: 18px;
+            border: 1px solid #000;
+            text-align: center;
+        }
+        .list a {
+            text-decoration: none;
+            color: #000;
+        }
+        </style>
+</head>
+<body>
+    <h2>Profile</h2>
+    <div class="menu">
+        <h5>Menu
+            <i class="fa-solid fa-caret-down"></i>
+        </h5>
+        <div class="list">
+            <div class="item"><a href="/FE/index.html">Dash Board</a><br></div>
+            <div class="item"><a href="/FE/ds.html">Data Sensor</a><br></div>
+            <div class="item"><a href="/FE/ah.html">Action History</a><br></div>
+            <div class="item"><a href="/FE/pf.html">Profile</a></div>
+        </div>
+    </div>
+    <div class="noi-dung">
+        <div class="grid_row">
+            <div class="grid_10">
+                <div class="nguoi-dung">
+                    <img src="/FE/avata.jpg" alt="" class="avata">
+                    <div class="noi-dung-chinh">
+                        <ul class="thong-tin-list">
+                            <li>Họ tên: <span>Trịnh Ngọc Lực</span></li>
+                            <li>Ngày sinh: <span>20/06/2002</span></li>
+                            <li>Mã sinh viên: <span>B20DCPT121 </span></li>
+                            <li>Số điện thoại : <span>0952647892</span></li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
